@@ -1,0 +1,213 @@
+2022-11-01T12:57:32.755+01:00  INFO 56741 --- [main] c.example.demo.AuditLogTestApplication   : Starting AuditLogTestApplication using Java 17.0.4.1 on luca-MS-7850 with PID 56741 (/home/luca/Desktop/spring stuff/demo/target/classes started by luca in /home/luca/Desktop/spring stuff/demo)
+2022-11-01T12:57:32.764+01:00  INFO 56741 --- [main] c.example.demo.AuditLogTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-11-01T12:57:33.379+01:00  INFO 56741 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-01T12:57:33.435+01:00  INFO 56741 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-11-01T12:57:33.884+01:00  INFO 56741 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-01T12:57:33.891+01:00  INFO 56741 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-01T12:57:33.892+01:00  INFO 56741 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.0.27]
+2022-11-01T12:57:33.974+01:00  INFO 56741 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-01T12:57:33.974+01:00  INFO 56741 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1132 ms
+2022-11-01T12:57:34.023+01:00  WARN 56741 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2022-11-01T12:57:34.025+01:00  INFO 56741 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-01T12:57:34.056+01:00 ERROR 56741 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-11-01T12:58:56.211+01:00  INFO 57309 --- [main] c.example.demo.AuditLogTestApplication   : Starting AuditLogTestApplication using Java 17.0.4.1 on luca-MS-7850 with PID 57309 (/home/luca/Desktop/spring stuff/demo/target/classes started by luca in /home/luca/Desktop/spring stuff/demo)
+2022-11-01T12:58:56.215+01:00  INFO 57309 --- [main] c.example.demo.AuditLogTestApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-11-01T12:58:56.691+01:00  INFO 57309 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-01T12:58:56.749+01:00  INFO 57309 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2022-11-01T12:58:57.220+01:00  INFO 57309 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-01T12:58:57.231+01:00  INFO 57309 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-01T12:58:57.231+01:00  INFO 57309 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.0.27]
+2022-11-01T12:58:57.330+01:00  INFO 57309 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-01T12:58:57.331+01:00  INFO 57309 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2022-11-01T12:58:57.501+01:00  INFO 57309 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-01T12:58:57.577+01:00  INFO 57309 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.4.Final
+2022-11-01T12:58:57.757+01:00  WARN 57309 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-11-01T12:58:57.872+01:00  INFO 57309 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-01T12:58:58.136+01:00  INFO 57309 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15f519f7
+2022-11-01T12:58:58.138+01:00  INFO 57309 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-01T12:58:58.194+01:00  INFO 57309 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-11-01T12:58:58.770+01:00  INFO 57309 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-01T12:58:58.776+01:00  INFO 57309 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-01T12:58:59.012+01:00  INFO 57309 --- [main] o.a.k.connect.json.JsonConverterConfig   : JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+
+2022-11-01T12:58:59.014+01:00  INFO 57309 --- [main] o.a.k.connect.json.JsonConverterConfig   : JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+
+2022-11-01T12:58:59.021+01:00  INFO 57309 --- [main] i.d.e.EmbeddedEngine$EmbeddedConfig      : EmbeddedConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 60000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/offsets_10373112995339397416.dat
+	offset.storage.partitions = null
+	offset.storage.replication.factor = null
+	offset.storage.topic = 
+	plugin.path = null
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+
+2022-11-01T12:58:59.022+01:00  WARN 57309 --- [main] o.a.kafka.connect.runtime.WorkerConfig   : Variables cannot be used in the 'plugin.path' property, since the property is used by plugin scanning before the config providers that replace the variables are initialized. The raw value 'null' was used for plugin scanning, as opposed to the transformed value 'null', and this may cause unexpected results.
+2022-11-01T12:58:59.027+01:00  INFO 57309 --- [pool-1-thread-1] o.a.k.c.storage.FileOffsetBackingStore   : Starting FileOffsetBackingStore with file /tmp/offsets_10373112995339397416.dat
+2022-11-01T12:58:59.061+01:00  WARN 57309 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-01T12:58:59.070+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      : Starting MySqlConnectorTask with configuration:
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    connector.class = io.debezium.connector.mysql.MySqlConnector
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    database.allowPublicKeyRetrieval = true
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    database.user = user
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    offset.storage = org.apache.kafka.connect.storage.FileOffsetBackingStore
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    database.server.id = 1
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    offset.flush.timeout.ms = 5000
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    errors.retry.delay.max.ms = 10000
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    include.schema.changes = false
+2022-11-01T12:58:59.071+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    database.port = 3306
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    schema.history.internal.file.filename = /tmp/dbhistory_1151120796229225807.dat
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    offset.flush.interval.ms = 60000
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    topic.prefix = my-app-connector
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    schema.history.internal = io.debezium.storage.file.history.FileSchemaHistory
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    offset.storage.file.filename = /tmp/offsets_10373112995339397416.dat
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    errors.max.retries = -1
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    database.hostname = localhost
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    database.password = ********
+2022-11-01T12:58:59.072+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    name = engine
+2022-11-01T12:58:59.073+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    errors.retry.delay.initial.ms = 300
+2022-11-01T12:58:59.073+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    value.converter = org.apache.kafka.connect.json.JsonConverter
+2022-11-01T12:58:59.073+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      :    key.converter = org.apache.kafka.connect.json.JsonConverter
+2022-11-01T12:58:59.100+01:00  INFO 57309 --- [pool-1-thread-1] i.debezium.config.CommonConnectorConfig  : Loading the custom topic naming strategy plugin: io.debezium.schema.DefaultTopicNamingStrategy
+2022-11-01T12:58:59.145+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      : No previous offsets found
+2022-11-01T12:58:59.220+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.mysql.MySqlConnectorTask   : Closing connection before starting schema recovery
+2022-11-01T12:58:59.222+01:00  INFO 57309 --- [pool-2-thread-1] io.debezium.jdbc.JdbcConnection          : Connection gracefully closed
+2022-11-01T12:58:59.223+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.mysql.MySqlConnectorTask   : Connector started for the first time, database schema history recovery will not be executed
+2022-11-01T12:58:59.224+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.mysql.MySqlConnectorTask   : Reconnecting after finishing schema recovery
+2022-11-01T12:58:59.255+01:00  INFO 57309 --- [pool-1-thread-1] io.debezium.util.Threads                 : Requested thread factory for connector MySqlConnector, id = my-app-connector named = change-event-source-coordinator
+2022-11-01T12:58:59.257+01:00  INFO 57309 --- [pool-1-thread-1] io.debezium.util.Threads                 : Creating thread debezium-mysqlconnector-my-app-connector-change-event-source-coordinator
+2022-11-01T12:58:59.260+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.p.ChangeEventSourceCoordinator       : Metrics registered
+2022-11-01T12:58:59.261+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.p.ChangeEventSourceCoordinator       : Context created
+2022-11-01T12:58:59.264+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : No previous offset has been found
+2022-11-01T12:58:59.264+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : According to the connector configuration both schema and data will be snapshotted
+2022-11-01T12:58:59.265+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 1 - Preparing
+2022-11-01T12:58:59.265+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 2 - Determining captured tables
+2022-11-01T12:58:59.265+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : Read list of available databases
+2022-11-01T12:58:59.267+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : 	 list of available databases is: [dbSRC, information_schema, mysql, performance_schema, sys]
+2022-11-01T12:58:59.268+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : Read list of available tables in each database
+2022-11-01T12:58:59.279+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : 	snapshot continuing with database(s): [information_schema, performance_schema, dbSRC, mysql, sys]
+2022-11-01T12:58:59.280+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Adding table dbSRC.customer to the list of capture schema tables
+2022-11-01T12:58:59.281+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 3 - Locking captured tables [dbSRC.customer]
+2022-11-01T12:58:59.284+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : Flush and obtain global read lock to prevent writes to database
+2022-11-01T12:58:59.287+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 4 - Determining snapshot offset
+2022-11-01T12:58:59.291+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : Read binlog position of MySQL primary server
+2022-11-01T12:58:59.293+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : 	 using binlog 'binlog.000005' at position '493' and gtid 'ad2c6120-59d9-11ed-82f8-0242ac130002:1'
+2022-11-01T12:58:59.293+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 5 - Reading structure of captured tables
+2022-11-01T12:58:59.293+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : All eligible tables schema should be captured, capturing: [dbSRC.customer]
+2022-11-01T12:58:59.423+01:00  INFO 57309 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-01T12:58:59.432+01:00  INFO 57309 --- [main] c.example.demo.AuditLogTestApplication   : Started AuditLogTestApplication in 3.628 seconds (process running for 4.152)
+2022-11-01T12:58:59.793+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : Reading structure of database 'dbSRC'
+2022-11-01T12:58:59.859+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 6 - Persisting schema history
+2022-11-01T12:58:59.878+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : Releasing global read lock to enable MySQL writes
+2022-11-01T12:58:59.879+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlSnapshotChangeEventSource   : Writes to MySQL tables prevented for a total of 00:00:00.593
+2022-11-01T12:58:59.880+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 7 - Snapshotting data
+2022-11-01T12:58:59.880+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshotting contents of 1 tables while still in transaction
+2022-11-01T12:58:59.880+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Exporting data from table 'dbSRC.customer' (1 of 1 tables)
+2022-11-01T12:58:59.882+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : 	 For table 'dbSRC.customer' using select statement: 'SELECT `id`, `fullname`, `email` FROM `dbSRC`.`customer`'
+2022-11-01T12:58:59.893+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : 	 Finished exporting 0 records for table 'dbSRC.customer'; total duration '00:00:00.013'
+2022-11-01T12:58:59.895+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.p.s.AbstractSnapshotChangeEventSource : Snapshot - Final stage
+2022-11-01T12:58:59.895+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] .d.p.s.AbstractSnapshotChangeEventSource : Snapshot completed
+2022-11-01T12:58:59.895+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.p.ChangeEventSourceCoordinator       : Snapshot ended with SnapshotResult [status=COMPLETED, offset=MySqlOffsetContext [sourceInfoSchema=Schema{io.debezium.connector.mysql.Source:STRUCT}, sourceInfo=SourceInfo [currentGtid=null, currentBinlogFilename=binlog.000005, currentBinlogPosition=493, currentRowNumber=0, serverId=0, sourceTime=2022-11-01T11:58:59.868Z, threadId=-1, currentQuery=null, tableIds=[dbSRC.customer], databaseName=dbSRC], snapshotCompleted=true, transactionContext=TransactionContext [currentTransactionId=null, perTableEventCount={}, totalEventCount=0], restartGtidSet=ad2c6120-59d9-11ed-82f8-0242ac130002:1, currentGtidSet=ad2c6120-59d9-11ed-82f8-0242ac130002:1, restartBinlogFilename=binlog.000005, restartBinlogPosition=493, restartRowsToSkip=0, restartEventsToSkip=0, currentEventLengthInBytes=0, inTransaction=false, transactionId=null, incrementalSnapshotContext =IncrementalSnapshotContext [windowOpened=false, chunkEndPosition=null, dataCollectionsToSnapshot=[], lastEventKeySent=null, maximumKey=null]]]
+2022-11-01T12:58:59.919+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] io.debezium.util.Threads                 : Requested thread factory for connector MySqlConnector, id = my-app-connector named = binlog-client
+2022-11-01T12:58:59.921+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.p.ChangeEventSourceCoordinator       : Starting streaming
+2022-11-01T12:58:59.935+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : GTID set purged on server: 
+2022-11-01T12:58:59.935+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Attempting to generate a filtered GTID set
+2022-11-01T12:58:59.935+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : GTID set from previous recorded offset: ad2c6120-59d9-11ed-82f8-0242ac130002:1
+2022-11-01T12:58:59.936+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : GTID set available on server: ad2c6120-59d9-11ed-82f8-0242ac130002:1-1
+2022-11-01T12:58:59.936+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Using first available positions for new GTID channels
+2022-11-01T12:58:59.936+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Relevant GTID set available on server: ad2c6120-59d9-11ed-82f8-0242ac130002:1-1
+2022-11-01T12:58:59.937+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Final merged GTID set to use when connecting to MySQL: ad2c6120-59d9-11ed-82f8-0242ac130002:1-1
+2022-11-01T12:58:59.938+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Registering binlog reader with GTID set: ad2c6120-59d9-11ed-82f8-0242ac130002:1-1
+2022-11-01T12:58:59.938+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Skip 0 events on streaming start
+2022-11-01T12:58:59.939+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Skip 0 rows on streaming start
+2022-11-01T12:58:59.939+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] io.debezium.util.Threads                 : Creating thread debezium-mysqlconnector-my-app-connector-binlog-client
+2022-11-01T12:58:59.942+01:00  INFO 57309 --- [blc-localhost:3306] io.debezium.util.Threads                 : Creating thread debezium-mysqlconnector-my-app-connector-binlog-client
+2022-11-01T12:58:59.951+01:00  INFO 57309 --- [blc-localhost:3306] c.g.shyiko.mysql.binlog.BinaryLogClient  : Connected to localhost:3306 at ad2c6120-59d9-11ed-82f8-0242ac130002:1-1 (sid:1, cid:27)
+2022-11-01T12:58:59.951+01:00  INFO 57309 --- [blc-localhost:3306] i.d.c.m.MySqlStreamingChangeEventSource  : Connected to MySQL binlog at localhost:3306, starting at MySqlOffsetContext [sourceInfoSchema=Schema{io.debezium.connector.mysql.Source:STRUCT}, sourceInfo=SourceInfo [currentGtid=null, currentBinlogFilename=binlog.000005, currentBinlogPosition=493, currentRowNumber=0, serverId=0, sourceTime=2022-11-01T11:58:59.868Z, threadId=-1, currentQuery=null, tableIds=[dbSRC.customer], databaseName=dbSRC], snapshotCompleted=true, transactionContext=TransactionContext [currentTransactionId=null, perTableEventCount={}, totalEventCount=0], restartGtidSet=ad2c6120-59d9-11ed-82f8-0242ac130002:1-1, currentGtidSet=ad2c6120-59d9-11ed-82f8-0242ac130002:1-1, restartBinlogFilename=binlog.000005, restartBinlogPosition=493, restartRowsToSkip=0, restartEventsToSkip=0, currentEventLengthInBytes=0, inTransaction=false, transactionId=null, incrementalSnapshotContext =IncrementalSnapshotContext [windowOpened=false, chunkEndPosition=null, dataCollectionsToSnapshot=[], lastEventKeySent=null, maximumKey=null]]
+2022-11-01T12:58:59.952+01:00  INFO 57309 --- [blc-localhost:3306] io.debezium.util.Threads                 : Creating thread debezium-mysqlconnector-my-app-connector-binlog-client
+2022-11-01T12:58:59.952+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Waiting for keepalive thread to start
+2022-11-01T12:58:59.953+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.c.m.MySqlStreamingChangeEventSource  : Keepalive thread is running
+2022-11-01T13:00:01.383+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      : 1 records sent during previous 00:01:02.338, last recorded offset of {server=my-app-connector} partition is {transaction_id=null, ts_sec=1667304001, file=binlog.000005, pos=572, gtids=ad2c6120-59d9-11ed-82f8-0242ac130002:1-1, row=1, server_id=1, event=2}
+2022-11-01T13:00:01.384+01:00  INFO 57309 --- [pool-1-thread-1] c.e.demo.listener.DebeziumListener       : Key = 'Struct{id=1}' value = 'Struct{after=Struct{id=1,fullname=John Doe,email=jd@example.com},source=Struct{version=2.0.0.Final,connector=mysql,name=my-app-connector,ts_ms=1667304001000,db=dbSRC,table=customer,server_id=1,gtid=ad2c6120-59d9-11ed-82f8-0242ac130002:2,file=binlog.000005,pos=714,row=0,thread=14},op=c,ts_ms=1667304001034}'
+2022-11-01T13:01:51.609+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      : 2 records sent during previous 00:01:50.226, last recorded offset of {server=my-app-connector} partition is {transaction_id=null, ts_sec=1667304111, file=binlog.000005, pos=890, gtids=ad2c6120-59d9-11ed-82f8-0242ac130002:1-2, row=1, server_id=1, event=2}
+2022-11-01T13:01:51.609+01:00  INFO 57309 --- [pool-1-thread-1] c.e.demo.listener.DebeziumListener       : Key = 'Struct{id=1}' value = 'Struct{before=Struct{id=1,fullname=John Doe,email=jd@example.com},source=Struct{version=2.0.0.Final,connector=mysql,name=my-app-connector,ts_ms=1667304111000,db=dbSRC,table=customer,server_id=1,gtid=ad2c6120-59d9-11ed-82f8-0242ac130002:3,file=binlog.000005,pos=1032,row=0,thread=14},op=d,ts_ms=1667304111361}'
+2022-11-01T13:01:51.609+01:00  INFO 57309 --- [pool-1-thread-1] c.e.demo.listener.DebeziumListener       : Key = 'Struct{id=1}' value = 'null'
+2022-11-01T13:01:58.681+01:00  INFO 57309 --- [SpringApplicationShutdownHook] io.debezium.embedded.EmbeddedEngine      : Stopping the embedded engine
+2022-11-01T13:01:58.681+01:00  INFO 57309 --- [SpringApplicationShutdownHook] io.debezium.embedded.EmbeddedEngine      : Waiting for PT5M for connector to stop
+2022-11-01T13:01:59.125+01:00  INFO 57309 --- [pool-1-thread-1] io.debezium.embedded.EmbeddedEngine      : Stopping the task and engine
+2022-11-01T13:01:59.125+01:00  INFO 57309 --- [pool-1-thread-1] i.d.connector.common.BaseSourceTask      : Stopping down connector
+2022-11-01T13:01:59.221+01:00  INFO 57309 --- [debezium-mysqlconnector-my-app-connector-change-event-source-coordinator] i.d.p.ChangeEventSourceCoordinator       : Finished streaming
+2022-11-01T13:01:59.221+01:00  INFO 57309 --- [blc-localhost:3306] i.d.c.m.MySqlStreamingChangeEventSource  : Stopped reading binlog after 0 events, last recorded offset: {transaction_id=null, ts_sec=1667304111, file=binlog.000005, pos=1129, gtids=ad2c6120-59d9-11ed-82f8-0242ac130002:1-3, server_id=1, event=1}
+2022-11-01T13:01:59.222+01:00  INFO 57309 --- [pool-3-thread-1] io.debezium.jdbc.JdbcConnection          : Connection gracefully closed
+2022-11-01T13:01:59.223+01:00  INFO 57309 --- [pool-1-thread-1] o.a.k.c.storage.FileOffsetBackingStore   : Stopped FileOffsetBackingStore
+2022-11-01T13:01:59.224+01:00  INFO 57309 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-01T13:01:59.225+01:00  INFO 57309 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-01T13:01:59.231+01:00  INFO 57309 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

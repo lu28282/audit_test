@@ -1,0 +1,23 @@
+customer:
+    datasource:
+        host: localhost
+        database: customerdb
+        port: 3306
+        username: user
+        password: password
+
+# start dummy stuff so JPA doesn't cry
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/dbSRC
+        username: user
+        password: password
+    jpa:
+        hibernate:
+            ddl-auto: update
+# end dummy stuff so JPA doesn't cry
+
+## Logging properties
+logging:
+    file: 
+        name: logs/debezium.log
