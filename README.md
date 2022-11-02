@@ -2,7 +2,7 @@
 
 
 1. docker-compose file ausführen.
-2. sudo docker exec -it <Container-id> bash
+2. sudo docker exec -it Container-id bash
 3. mysql -u root -p
 4. password = password
 5. Alle folgenden Befehle einfügen. Als Referenz der [Link zur MySQL Config](https://debezium.io/documentation/reference/2.0/connectors/mysql.html#setting-up-mysql).
