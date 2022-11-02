@@ -1,7 +1,7 @@
 customer:
     datasource:
         host: localhost
-        database: customerdb
+        database: dbSRC
         port: 3306
         username: user
         password: password
